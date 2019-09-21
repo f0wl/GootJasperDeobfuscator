@@ -3,7 +3,6 @@ import re
 import base64
   
 def decodeJS(String):
-
     print('[*] Decoded String\n')
     first = 0
     f = open(filename, "r")
@@ -29,10 +28,7 @@ def decodeJS(String):
             if "= \"\"" in x:
                 break
         i, num0, num1, num2 = 0, 2, 2, 1
-        #i = 0
-        #num0 = 2
-        #num1 = 2
-        #num2 = 1
+        
         finalString = ''
         while i < len(assembledString):
             if num1 != num0:
@@ -52,7 +48,6 @@ def decodeJS(String):
 
 
 def decodeVBS(String):
-
     print('[*] Decoded String\n')
 
     f = open(filename, "r")
