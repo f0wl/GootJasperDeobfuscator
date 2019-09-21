@@ -5,6 +5,11 @@ A deobfuscation script for Gootkit / Jasper Loader Malware
 
 ``` python3 gootdecrypt.py script.vbs ``` or ``` python3 gootdecrypt.py script.js```
 
+*gootdecrypt.py* will return the decoded PowerShell script as well as the inline PS Base64 string.
+
+
+## Threat Description
+
 The first VBS script is dropped via a ZIP File ([VBS AnyRun Analysis](https://app.any.run/tasks/ebd5b4d1-15f6-4d3d-a976-2db3335302a1/)). It executes an obfuscated and base64 encoded PowerShell script.
 
 
@@ -15,5 +20,3 @@ The second stage is a classic Jasper Loader Sample (Javascript file that contain
 
 
 ![Jasper JS script](screenshots/gootkit-js.png)
-
-*gootdecrypt.py* will return the decoded PowerShell script as well as the inline PS Base64 string.
